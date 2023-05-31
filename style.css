@@ -1,0 +1,305 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    /*colors*/
+        /* CSS HEX */
+    /* CSS HEX */
+        --black: #000000ff;
+        --white: #ffffffff;
+        --dark-moss-green: #145d09ff;
+        --pigment-green: #36ab5bff;
+        --mantis: #81c14bff;
+
+        /*background*/
+        --main-background:var(--white);
+        --emphasis-text:var(--pigment-green);
+        --title-color:var(--mantis);
+
+        /*border color*/
+        --borderColor:var(--kelly-gr);
+
+        /*top nav*/
+        --top-nav-background:var(--dark-moss-green);
+        
+    
+    /*fonts*/
+    --main-font:'Poppins', sans-serif;
+    --title-font:'Abril Fatface', cursive;
+    
+    /*weights*/
+    --main-weight:300;
+    --emphasis-weight:700;
+    --title-weight:700;
+
+    /*sizes*/
+    --regular-size:0.5em;
+    --title-size:1em;
+
+    /*text aligns*/
+    --title-align:center;
+    --main-align:left;
+    --logo-align:right;
+
+    /*paddings*/
+
+
+    
+
+}
+
+body{
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+
+    background-color: var(--main-background);
+    margin:0%;
+    padding:0%;
+
+
+}
+
+.titleBit{
+    text-align:var(--title-align);
+    font-size: var(--title-size);
+    float:var(--title-align);
+    background-color: var(--title-color);
+    width:100%;
+    height:10%;
+}
+
+h1{
+    font-family:var(--title-font);
+    font-weight:var(--title-weight);
+    display: block;
+    width:100%;
+}
+
+h1::after{
+    font-family: var(--main-font);
+    color:var(--main-background);
+    content: "QUALITY LANSCAPING";
+    font-size: 0.4em;
+    float:var(--title-align);
+    text-align: var(--title-align);
+    text-shadow: 2px 2px var(--emphasis-text);
+    display: block;
+}
+
+  
+.topnav
+{
+    top:0;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:var(--top-nav-background);
+    color:black;
+    text-decoration: none;
+    justify-content: var(--main-align);
+
+    max-height:20%;
+
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav a{
+    font-size: 1.53m;
+    font-weight: var(--emphasis-weight);
+    float:var(--main-align);
+    font-family: var(--main-font);
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px var(--black);
+    padding: 2% 2%;
+
+    text-transform: uppercase;
+}
+
+.topnav a:hover{
+    color: var(--black);
+    background-color:var(--emphasis-text);
+    font-weight: var(--emphasis-weight);
+    text-decoration: none;
+    text-shadow: 2px 2px var(--black);
+}
+
+footer{
+    display: block;
+    background-color:black;
+    color:white;
+    float:var(--main-align);
+    font-weight: var(--emphasis-weight);
+    text-transform: uppercase;
+    width:93.4%;
+    padding:3.3%;
+    font-family:var(--main-font);
+    font-size: 1em;
+    }
+
+h2{
+    text-transform: uppercase;
+    text-align: var(--main-align);
+    font-family: var(--main-font);
+    padding:2%;
+    background-color: var(--title-color);
+    width: 96%;
+
+}
+
+.full
+{
+    width:100%;
+
+}
+
+.flexContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    row-gap: 1%;
+}
+
+.fullContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-basis: 96%;
+    flex-shrink: 1;
+    row-gap: 1%;
+}
+
+.fullBox{
+    width:96%;
+    padding:2%;
+}
+
+.boxes{
+    width:50%;
+    padding:2%;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--main-background);
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-background);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .topnav
+    {
+        top:0;
+        position: sticky;
+        display: flex;
+        flex-wrap: wrap;
+        background-color:var(--top-nav-background);
+        color:black;
+        text-decoration: none;
+        justify-content: space-between;
+    
+        max-height:20%;
+    
+    
+    }
+    
+    .flexContainer{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        flex-grow: 1;
+        flex-basis: 96%;
+        flex-shrink: 1;
+        row-gap: 1%;
+    }
+    
+    .fullContainer{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        flex-grow: 1;
+        flex-basis: 96%;
+        flex-shrink: 1;
+        row-gap: 1%;
+    }
+    
+    .fullBox{
+        width:96%;
+        padding:2%;
+    }
+    
+    .boxes{
+        width:96%;
+        padding:2%;
+    }
+
+    .topnav a{
+        font-size: 1.53m;
+        font-weight: var(--emphasis-weight);
+        float:var(--title-align);
+        width:fit-content;
+        font-family: var(--main-font);
+        text-decoration: none;
+        color:white;
+        text-shadow: 2px 2px var(--black);
+        padding: 2% 2%;
+    
+        text-transform: uppercase;
+    }
+
+    .topnav a:not(:first-child) {display: none; width:100%;}
+    .topnav a.icon {
+      float: var(--logo-align);
+      display: block;
+      width:fit-content;
+    }
+      
+
+    .topnav.responsive {position: sticky;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+  }
