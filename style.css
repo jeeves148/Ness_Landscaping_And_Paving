@@ -56,7 +56,7 @@ html{
 
 .iconNeeded
 {
-    font-size:50px;
+    font-size:1em;
 }
 
 .iconNeeded:hover
@@ -133,7 +133,7 @@ h1::after{
     display: none;
 }
 
-.topnav a{
+i , .topnav a{
     font-size: 1.53m;
     font-weight: var(--emphasis-weight);
     float:var(--main-align);
