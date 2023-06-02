@@ -5,11 +5,11 @@
 .row{
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     flex-grow: 1;
-    flex-basis: 96%;
+    flex-basis: 48%;
     flex-shrink: 1;
     row-gap: 1%;
 
@@ -27,7 +27,6 @@
   /* Create four equal columns that floats next to eachother */
   .column {
     float: left;
-    width: 25%;
   }
   
   /* The Modal (background) */
