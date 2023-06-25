@@ -2,10 +2,13 @@
     padding: 0 8px;
   }
 
+.slideImages{
+  width:60%;
+}
+
 .row{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     flex-grow: 1;
@@ -51,6 +54,7 @@
     padding: 0;
     width: 90%;
     max-width: 1200px;
+
   }
   
   /* The Close Button */
@@ -73,6 +77,9 @@
   /* Hide the slides by default */
   .mySlides {
     display: none;
+    display:flex;
+    align-items:center;
+    height:100%;
   }
   
   /* Next & previous buttons */
@@ -124,6 +131,7 @@
   
   img.demo {
     opacity: 0.6;
+    scaleX:10%;
   }
   
   .active,
