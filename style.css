@@ -2,6 +2,9 @@ html{
     scroll-behavior: smooth;
 }
 
+.section_adjust{
+    margin-top:20%
+}
 :root{
     /*colors*/
         /* CSS HEX */
@@ -120,6 +123,15 @@ h1::after{
     box-shadow: 2px 2px 5px black;
 
     overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.img:hover
+{
+    transform: scale(1.1);
+    animation: animate__pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */  
 }
 
 .topnav
@@ -203,6 +215,11 @@ h2{
     row-gap: 1%;
 }
 
+.flexContainer:nth-of-type(even)
+{
+    background-color: #efefef;
+}
+
 .fullContainer{
     display:flex;
     flex-direction: row;
@@ -277,7 +294,7 @@ h2{
         flex-basis: 96%;
         flex-shrink: 1;
         row-gap: 1%;
-        margin: 0% 4%;
+        margin:0% 4%;
     }
     
     .fullContainer{

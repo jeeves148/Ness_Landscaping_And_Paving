@@ -51,3 +51,15 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  const element = document.getElementsByClassName('img');
+
+  element.addEventListener('mouseenter', function() {
+    console.log("testing 1")
+    element.classList.add('animate__animated');
+    element.classList.add('animate__pulse');
+  });
+
+  element.addEventListener('mouseleave', function() {
+    element.classList.remove('animate__pulse');
+  });
