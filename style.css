@@ -52,6 +52,11 @@ html{
 
 }
 
+li{
+    color:black;
+    font-weight: bold;
+}
+
 .fa-home
 {
     color: var(--main-background);
