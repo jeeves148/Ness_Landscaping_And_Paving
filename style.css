@@ -173,8 +173,8 @@ h1::after{
     display: none;
 }
 
-.topnav a , .topnav i{
-    font-size: 1.53m;
+.topnav a {
+    font-size: 1em;
     font-weight: var(--emphasis-weight);
     float:var(--main-align);
     font-family: var(--main-font);
@@ -215,11 +215,11 @@ i{
 .topnav i{
     font-weight: var(--emphasis-weight);
     float:var(--main-align);
-    font-family: var(--main-font);
     text-decoration: none;
     color:white;
     text-shadow: 2px 2px var(--black);
-    padding: 2% 2%;
+    font-size: 1em;
+    padding: 0% 2%;
 
     text-transform: uppercase;
 }

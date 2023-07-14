@@ -6,6 +6,8 @@ function responsiveTopNav() {
     } else {
       x.className = "topnav";
     }
+    
+  
   }
 
 
