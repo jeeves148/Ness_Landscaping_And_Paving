@@ -152,6 +152,7 @@ h1::after{
 }
 
 
+
 /* TOPNAV*/
 .topnav
 {
@@ -206,7 +207,17 @@ i{
     padding: 2% 2%;
 
     text-transform: uppercase;
+
+    transition: 0.3s;
 }
+
+i:hover
+{
+    transform:rotate(360deg);
+    animation-duration: 4s; /* don't forget to set a duration! */   
+   z-index: 0;
+}
+
 
 .whiteI{
     font-size: 1em;
