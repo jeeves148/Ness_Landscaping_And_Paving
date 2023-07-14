@@ -191,6 +191,9 @@ h1::after{
     padding:2%;
     width: 96%;
     flex-direction: column;
+    font-family:var(--main-font);
+    float:var(--main-align);
+    font-weight: var(--emphasis-weight);
   }
 
 i{
