@@ -64,18 +64,6 @@ li{
     color: var(--main-background);
 }
 
-.iconNeeded
-{
-    font-size:1em;
-}
-
-.iconNeeded:hover
-{
-    color: var(--emphasis-text);
-    animation: jello; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-}
-
 body{
     font-family: var(--main-font);
     font-weight: var(--main-weight);
@@ -163,6 +151,8 @@ h1::after{
    z-index: 0;
 }
 
+
+/* TOPNAV*/
 .topnav
 {
     top:0;
@@ -242,6 +232,7 @@ i{
     text-shadow: 2px 2px var(--black);
 }
 
+/*END OF TOPNAV CODE*/
 footer{
     display: block;
     background-color:black;
@@ -348,6 +339,8 @@ h2{
         color:black;
         text-decoration: none;
         justify-content: space-between;
+
+        font-size: 1em;
     
         max-height:20%;
     
@@ -391,7 +384,7 @@ h2{
     }
 
     .topnav a{
-        font-size: 1.53m;
+        font-size: 1em;
         font-weight: var(--emphasis-weight);
         float:var(--title-align);
         width:fit-content;
@@ -412,6 +405,7 @@ h2{
     .topnav a:not(:first-child) {display: none; width:100%;}
 
     .topnav a.icon {
+      font-size: 1em;
       float: right;
       display: block;
       width:fit-content;
