@@ -2,6 +2,15 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--emphasis-text);
+}
+
+
 /*1ST CHECK OF SECURITY*/
 
 .section_adjust{
@@ -194,6 +203,7 @@ h1::after{
     flex-direction: column;
     font-family:var(--main-font);
     float:var(--main-align);
+    text-decoration: none;
     font-weight: var(--emphasis-weight);
   }
 
@@ -217,7 +227,6 @@ i:hover
     animation-duration: 4s; /* don't forget to set a duration! */   
    z-index: 0;
 }
-
 
 .whiteI{
     font-size: 1em;
